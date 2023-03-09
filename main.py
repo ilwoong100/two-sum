@@ -5,8 +5,7 @@ def twoSum(nums: List[int], target: int) -> List[int]:
     for i , num in enumerate(nums):
         leftnum = target - num
         if leftnum in cand:
-            print([nums.index(leftnum), nums.index(num)])
-            return
+            return [nums.index(leftnum), nums.index(num)]
         cand.append(num)
 
 
